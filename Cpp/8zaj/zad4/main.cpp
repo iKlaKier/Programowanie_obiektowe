@@ -14,8 +14,9 @@ vector<int> fun(const vector<int> &vec1, const vector<int> &vec2) {
 
     vector<int> result;
 
-    for(const int i : s)
-        result.push_back(i);
+    result.insert(result.begin(), s.end()); //sprawdzić bo nie działa....
+//    for(const int i : s)
+//        result.push_back(i);
 
     return result;
 }
